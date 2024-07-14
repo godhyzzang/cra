@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./css/App.css";
+import { TestButton, RadSquareCard } from "./css/styled.js";
 
 function App() {
   return (
@@ -17,7 +19,14 @@ function App() {
         >
           Learn React
         </a>
+        <TestButton radius={15}>빨간버튼</TestButton> {/* 동적 border-radius */}
       </header>
+      <RadSquareCard
+        width={100}
+        height={150}
+        radius={15}
+        text="둥근 카드 테스트"
+      />
     </div>
   );
 }
